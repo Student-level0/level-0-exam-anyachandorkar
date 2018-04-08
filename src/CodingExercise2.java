@@ -10,7 +10,15 @@ import javax.swing.JOptionPane;
  **/
 
 public class CodingExercise2 {
-
+public static void main(String[] args) {
+	String age = JOptionPane.showInputDialog("How old are you?");
+int newage = Integer.parseInt(age);
+int year = 2018 - newage; 
+JOptionPane.showMessageDialog(null, "You were born in " + year);
+if (newage>30) {
+	JOptionPane.showMessageDialog(null, "You're too old to play this game");
+}
+}
 }
 
 
